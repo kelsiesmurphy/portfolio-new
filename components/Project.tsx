@@ -4,16 +4,17 @@ import github from "react-useanimations/lib/github";
 
 const Project = ({ project, displayFont, index }: any) => {
   return (
-    <div className={`z-10 snap-start h-screen flex flex-wrap gap-6 items-center justify-between ${index % 2 === 1 ? "flex-row-reverse" : "flex-row"}`}>
-      <div className="space-y-6 max-w-[260px]">
+    <div className={`z-10 snap-start min-h-screen flex flex-wrap gap-x-12 gap-y-6 items-center ${index % 2 === 1 ? "flex-row-reverse" : "flex-row"}`}>
+      <div className="space-y-6 md:max-w-[260px]">
         <Image
           src={project.logo}
           alt={project.project_name + " Logo"}
-          width="200"
+          width="0"
           height="0"
+          className="w-[160px] md:w-[200px]"
         />
         <h2
-          className={`${displayFont.className} font-serif text-xl md:text-2xl font-medium text-stone-900 text-opacity-80`}
+          className={`${displayFont.className} font-serif text-lg md:text-2xl font-medium text-stone-900 text-opacity-80`}
         >
           {project.title}
         </h2>
@@ -44,20 +45,20 @@ const Project = ({ project, displayFont, index }: any) => {
 
       <a
         href={project.link}
-        className="aspect-[1440/960] max-w-[819px] hover:shadow-lg shadow-gray-500 transition-shadow duration-500 p-1 bg-gray-400 rounded-xl bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 border border-gray-100"
+        className="aspect-[1440/960] max-w-[819px] hover:shadow-lg shadow-gray-500 transition-shadow duration-500 p-1 bg-gray-400 rounded-lg md:rounded-xl bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 border border-gray-100"
         target="_blank"
       >
-        <div className="pb-2.5 pt-1.5 px-1 flex gap-2">
-          <div className="bg-white bg-opacity-50 hover:bg-opacity-100 transition-all duration-300 rounded-full aspect-square w-3" />
-          <div className="bg-white bg-opacity-50 hover:bg-opacity-100 transition-all duration-300 rounded-full aspect-square w-3" />
-          <div className="bg-white bg-opacity-50 hover:bg-opacity-100 transition-all duration-300 rounded-full aspect-square w-3" />
+        <div className="pb-2 pt-1 md:pb-2.5 md:pt-1.5 px-1 flex gap-1 md:gap-2">
+          <div className="bg-white bg-opacity-50 hover:bg-opacity-100 transition-all duration-300 rounded-full aspect-square w-2 md:w-3" />
+          <div className="bg-white bg-opacity-50 hover:bg-opacity-100 transition-all duration-300 rounded-full aspect-square w-2 md:w-3" />
+          <div className="bg-white bg-opacity-50 hover:bg-opacity-100 transition-all duration-300 rounded-full aspect-square w-2 md:w-3" />
         </div>
         <Image
           src={project.image}
           alt={project.alt_image}
           width="0"
           height="0"
-          className="rounded-b-lg rounded-t-md"
+          className="rounded-b-md rounded-t-sm md:rounded-b-lg md:rounded-t-md"
         />
       </a>
     </div>

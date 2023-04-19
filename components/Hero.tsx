@@ -19,7 +19,7 @@ const Hero = ({displayFont}:any) => {
   }, []);
 
   return (
-    <div className="z-10 snap-start min-h-screen flex flex-col gap-6 justify-center items-center">
+    <div className="z-10 snap-start text-center min-h-screen flex flex-col gap-6 justify-center items-center">
       <h1
         className={`${displayFont.className} font-serif text-4xl md:text-6xl font-medium text-stone-900 text-opacity-80`}
       >

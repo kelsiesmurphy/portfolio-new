@@ -5,12 +5,12 @@ const About = ({ displayFont }: any) => {
   return (
     <div className="z-10 w-full max-w-5xl snap-start min-h-screen flex flex-col gap-6 py-24">
       <h2
-        className={`${displayFont.className} text-2xl md:text-3xl font-medium text-stone-900 text-opacity-80`}
+        className={`${displayFont.className} text-2xl text-center md:text-left md:text-3xl font-medium text-stone-900 text-opacity-80`}
       >
         About Me
       </h2>
-      <div className="flex gap-6 items-start">
-        <div className="text-lg md:text-xl font-light text-stone-700 flex flex-col gap-3">
+      <div className="flex flex-wrap-reverse gap-6 items-end justify-center md:justify-start">
+        <div className="text-lg md:text-xl max-w-2xl font-light text-stone-700 flex flex-col gap-3">
           <p>
             Hello! My name is Kelsie and I enjoy designing and building software
             and websites with a focus on user experience.
@@ -51,7 +51,7 @@ const About = ({ displayFont }: any) => {
           src={headshot}
           width="0"
           height="0"
-          className="rounded-full shadow-md max-w-[280px]"
+          className="rounded-full shadow-md max-w-[120px] md:max-w-[280px]"
           alt="Kelsie Murphy smiling in a green field"
         />
       </div>

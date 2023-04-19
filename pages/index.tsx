@@ -33,7 +33,7 @@ export default function Home() {
       <div id="blob"></div>
       <main
         id="blur"
-        className={`${hankenGrotesk.variable} font-sans flex h-screen snap-y snap-mandatory overflow-scroll flex-col items-center px-4`}
+        className={`${hankenGrotesk.variable} font-sans lg:h-screen flex snap-y snap-mandatory overflow-scroll flex-col items-center px-4`}
       >
         <Hero displayFont={sora}/>
         <About displayFont={sora}/>
