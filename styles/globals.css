@@ -37,5 +37,21 @@ body {
 
 #blur {
   z-index: 2;
-  backdrop-filter: blur(12vmax);
+  backdrop-filter: blur(10vmax);
+}
+
+
+/* Projects IFrame */
+
+iframe {
+  -moz-transform: scale(0.5, 0.5); 
+  -webkit-transform: scale(0.5, 0.5); 
+  -o-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5); 
+  -moz-transform-origin: center;
+  -webkit-transform-origin: center;
+  -o-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
 }

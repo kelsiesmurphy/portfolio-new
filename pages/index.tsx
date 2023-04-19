@@ -1,9 +1,14 @@
-import Image from "next/image";
-import { Sora, Hanken_Grotesk } from "next/font/google";
 import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Footer from "@/components/Footer";
+import { Sora, Hanken_Grotesk } from "next/font/google";
+import Projects from "@/components/Projects";
 
-const sora = Sora({ subsets: ["latin"] });
-const hankenGrotesk = Hanken_Grotesk({ subsets: ["latin"] });
+const sora = Sora({ subsets: ["latin"], variable: "--font-sora" });
+const hankenGrotesk = Hanken_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-hanken",
+});
 
 export default function Home() {
   /* -- Glow effect -- */
@@ -26,12 +31,14 @@ export default function Home() {
   return (
     <>
       <div id="blob"></div>
-      <main id="blur" className="flex min-h-screen flex-col items-center justify-between px-4">
-        <Hero font1={sora} font2={hankenGrotesk}/>
-        <Hero font1={sora} font2={hankenGrotesk}/>
-        <Hero font1={sora} font2={hankenGrotesk}/>
-        <Hero font1={sora} font2={hankenGrotesk}/>
-        <Hero font1={sora} font2={hankenGrotesk}/>
+      <main
+        id="blur"
+        className={`${hankenGrotesk.variable} font-sans flex h-screen snap-y snap-mandatory overflow-scroll flex-col items-center px-4`}
+      >
+        <Hero displayFont={sora}/>
+        <About displayFont={sora}/>
+        <Projects displayFont={sora}/>
+        <Footer/>
       </main>
     </>
   );
