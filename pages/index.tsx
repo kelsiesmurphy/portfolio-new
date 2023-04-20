@@ -11,8 +11,6 @@ const hankenGrotesk = Hanken_Grotesk({
 });
 
 export default function Home() {
-  /* -- Glow effect -- */
-
   if (typeof window !== "undefined") {
     const blob = document.getElementById("blob");
 

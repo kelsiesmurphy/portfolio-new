@@ -2,6 +2,7 @@ import UseAnimations from "react-useanimations";
 import github from "react-useanimations/lib/github";
 import linkedin from "react-useanimations/lib/linkedin";
 import twitter from "react-useanimations/lib/twitter";
+import mail from "react-useanimations/lib/mail";
 
 import React, { useEffect, useRef } from "react";
 import lottie from "lottie-web";
@@ -54,6 +55,16 @@ const Hero = ({displayFont}:any) => {
             <UseAnimations
               animation={twitter}
               strokeColor={"#44403c"}
+              size={40}
+            />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:kelsie@kelsiesmurphy.com">
+            <UseAnimations
+              animation={mail}
+              strokeColor={"#44403c"}
+              loop={true}
               size={40}
             />
           </a>
