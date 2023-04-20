@@ -7,7 +7,7 @@ const Projects = ({ displayFont }: any) => {
       <ul className="flex-1 space-y-24">
         {projects.map((project, index) => {
           return (
-            <li key={index}>
+            <li key={index} className="flex">
               <Project project={project} displayFont={displayFont} index={index}/>
             </li>
           )

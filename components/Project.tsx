@@ -1,23 +1,25 @@
 import Image from "next/image";
+import Link from "next/link";
 import UseAnimations from "react-useanimations";
 import github from "react-useanimations/lib/github";
 
 const Project = ({ project, displayFont, index }: any) => {
   return (
     <div className={`z-10 snap-start min-h-screen flex flex-wrap gap-x-12 gap-y-6 items-center ${index % 2 === 1 ? "flex-row-reverse" : "flex-row"}`}>
-      <div className="space-y-6 md:max-w-[260px]">
+      <div className="space-y-6 lg:max-w-[260px]">
         <Image
           src={project.logo}
           alt={project.project_name + " Logo"}
           width="0"
           height="0"
-          className="w-[160px] md:w-[200px]"
+          className="w-[160px] md:w-[200px] aspect-[200/57] mb-6"
         />
-        <h2
-          className={`${displayFont.className} font-serif text-lg md:text-2xl font-medium text-stone-900 text-opacity-80`}
+        <Link
+          href={`/${project.id}`}
+          className={`${displayFont.className} font-serif text-lg md:text-2xl font-medium text-stone-900 text-opacity-80 hover:underline`}
         >
           {project.title}
-        </h2>
+        </Link>
         <ul className="flex flex-wrap gap-4">
           {project.technology.map((techItem: any, index: number) => {
             return (
@@ -58,7 +60,7 @@ const Project = ({ project, displayFont, index }: any) => {
           alt={project.alt_image}
           width="0"
           height="0"
-          className="rounded-b-md rounded-t-sm md:rounded-b-lg md:rounded-t-md"
+          className="rounded-b-md rounded-t-sm qlmd:rounded-b-lg md:rounded-t-md"
         />
       </a>
     </div>
