@@ -5,7 +5,11 @@ import github from "react-useanimations/lib/github";
 
 const Project = ({ project, displayFont, index }: any) => {
   return (
-    <div className={`z-10 snap-start min-h-screen flex flex-wrap gap-x-12 gap-y-6 items-center ${index % 2 === 1 ? "flex-row-reverse" : "flex-row"}`}>
+    <div
+      className={`z-10 min-h-screen flex flex-wrap gap-x-12 gap-y-6 items-center ${
+        index % 2 === 1 ? "flex-row-reverse" : "flex-row"
+      }`}
+    >
       <div className="space-y-6 lg:max-w-[260px]">
         <Image
           src={project.logo}

@@ -7,7 +7,7 @@ import mail from "react-useanimations/lib/mail";
 import React, { useEffect, useRef } from "react";
 import lottie from "lottie-web";
 
-const Hero = ({displayFont}:any) => {
+const Hero = ({ displayFont }: any) => {
   const container: any = useRef(null);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const Hero = ({displayFont}:any) => {
   }, []);
 
   return (
-    <div className="z-10 snap-start text-center min-h-screen flex flex-col gap-6 justify-center items-center">
+    <div className="z-10 text-center min-h-screen flex flex-col gap-6 justify-center items-center">
       <h1
         className={`${displayFont.className} font-serif text-4xl md:text-6xl font-medium text-stone-900 text-opacity-80`}
       >

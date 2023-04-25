@@ -3,7 +3,7 @@ import headshot from "../public/kelsie.jpg";
 
 const About = ({ displayFont }: any) => {
   return (
-    <div className="z-10 w-full max-w-5xl snap-start min-h-screen flex flex-col gap-6 py-24">
+    <div className="z-10 w-full max-w-5xl min-h-screen flex flex-col gap-6 py-24">
       <h2
         className={`${displayFont.className} text-2xl text-center md:text-left md:text-3xl font-medium text-stone-900 text-opacity-80`}
       >
@@ -28,11 +28,19 @@ const About = ({ displayFont }: any) => {
             App.
           </p>
           <p>
+            As I am currently switching careers from teacher and magician to software engineering, I have built up many soft-skills, and I am skilled in presenting information. From my year working with the Australian agency, I have learned a great deal about how technical teams work already, and I'm eager to learn more.
+          </p>
+          <p>
             When I'm not coding, you might catch me performing magic, juggling,
             or playing piano.
           </p>
+          <p>
+            If you want to say hello, reach out to me at <a className="font-medium underline" href="mailto:kelsie@kelsiesmurphy.com">kelsie@kelsiesmurphy.com</a>
+          </p>
           <div className="space-y-3 mt-4">
-            <h3 className={`${displayFont.className} text-lg font-medium text-stone-900 text-opacity-80`}>
+            <h3
+              className={`${displayFont.className} text-lg font-medium text-stone-900 text-opacity-80`}
+            >
               Here are a few technologies I've been working with recently:
             </h3>
             <ul className="list-disc list-inside columns-2">
