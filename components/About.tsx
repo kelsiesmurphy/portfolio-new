@@ -16,19 +16,7 @@ const About = ({ displayFont }: any) => {
             and websites with a focus on user experience.
           </p>
           <p>
-            I studied to be a music teacher at the University of Aberdeen,
-            before discovering a passion for software development. I've
-            previously worked with tools such as Webflow and Bubble.io, before
-            re-training as a software developer.
-          </p>
-          <p>
-            I've had the privilege of working with an Australian agency shipping
-            software in an agile team using Bubble.io, and I'm currently
-            volunteering with the Scottish Tech Army to develop their Volunteer
-            App.
-          </p>
-          <p>
-            As I am currently switching careers from teacher and magician to software engineering, I have built up many soft-skills, and I am skilled in presenting information. From my year working with the Australian agency, I have learned a great deal about how technical teams work already, and I'm eager to learn more.
+            I am a software engineer with BJSS, a technology and engineering consultancy. I have also worked on the Volunteer App with the Scottish Tech Army. I studied at CodeClan, and continued my learning in the BJSS Academy.
           </p>
           <p>
             When I'm not coding, you might catch me performing magic, juggling,
